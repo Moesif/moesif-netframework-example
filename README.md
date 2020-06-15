@@ -1,9 +1,9 @@
-# Moesif NET Framework Example
+# Moesif .NET Framework Example
 
 [Moesif](https://www.moesif.com) is an API analytics platform. [Moesif.Middleware](https://github.com/Moesif/moesif-dotnet)
 is a middleware that makes integration with Moesif easy for .NET applications.
 
-This is an example of NET Framework 4.6.2 application with Moesif integrated.
+This is an example of NET Framework 4.6.2 application with Moesif integrated running on IIS.
 
 ## Key files
 
@@ -38,6 +38,8 @@ and then clicking _Installation_.
 3. See `HomeController.cs` for some sample ASP.NET MVC routes and `ProductController.cs` for some 
 sample ASP.NET Web API routes that you can test such as the below GET:
 
+_Replace the port 59096 with the actual port your app is running on_
+
 ```
 GET http://localhost:59096/api/product/123
 ```
@@ -47,9 +49,10 @@ You can also try a POST request:
 ```
 POST http://localhost:59096/api/product
 {
-    "id": 123,
-    "name": "first",
-    "category": "last"
+    "Id": 1234,
+    "Name": "Chair",
+    "Category": "Furniture",
+    "Price": 0.0
 }
 ```
 

@@ -11,15 +11,33 @@ namespace Moesif.NetFramework.Example
     public class ProductController : ApiController
     {
         // GET api/product
-        public IEnumerable<string> Get()
+        public IEnumerable<Product> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new Product[] {
+            new Product
+            {
+                Id = 1234,
+                Name = "Chair",
+                Category = "Furniture"
+            },
+            new Product
+            {
+                Id = 567,
+                Name = "Table",
+                Category = "Furniture"
+             }
+            };
         }
 
         // GET api/product/5
-        public string Get(int id)
+        public Product Get(int id)
         {
-            return "value";
+            return new Product
+            {
+                Id = 1234,
+                Name = "Chair",
+                Category = "Furniture"
+            };
         }
 
         // POST api/product
