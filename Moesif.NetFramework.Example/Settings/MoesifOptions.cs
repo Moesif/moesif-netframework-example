@@ -63,7 +63,7 @@ namespace Moesif.NetFramework.Example.Settings
             {"GetSessionToken", GetSessionToken},
             {"GetMetadata", GetMetadata},
             {"GetMetadataOutgoing", GetMetadataOutgoing},
-            {"EnableBatching", false},
+            {"EnableBatching", true},
             {"BatchSize", 25}
         };
     }
