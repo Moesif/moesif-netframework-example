@@ -10,12 +10,14 @@ namespace Moesif.NetFramework.Example.Controllers
     {
         public ActionResult Index()
         {
+            Console.Out.WriteLine("Home Index");
             return View();
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+            Console.Out.WriteLine("Home about");
 
             return View();
         }

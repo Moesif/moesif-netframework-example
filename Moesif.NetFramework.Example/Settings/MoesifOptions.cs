@@ -53,7 +53,7 @@ namespace Moesif.NetFramework.Example.Settings
 
         static public Dictionary<string, object> moesifOptions = new Dictionary<string, object>
         {
-            {"ApplicationId", "Your Moesif Application Id"},
+            {"ApplicationId", "eyJhcHAiOiI1MTk6MzQ1IiwidmVyIjoiMi4xIiwib3JnIjoiNDIwOjMyMCIsImlhdCI6MTY5MzUyNjQwMH0.lK9JGmOPOS2hVHSt8sG8AYWlSE849Jf6bEOjEF7BGFc"},
             {"LocalDebug", true},
             {"LogBody", true},
             {"LogBodyOutgoing", true},

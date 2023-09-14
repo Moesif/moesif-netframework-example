@@ -13,6 +13,7 @@ namespace Moesif.NetFramework.Example
         // GET api/product
         public IEnumerable<Product> Get()
         {
+            Console.Out.WriteLine("Product Get");
             return new Product[] {
             new Product
             {
