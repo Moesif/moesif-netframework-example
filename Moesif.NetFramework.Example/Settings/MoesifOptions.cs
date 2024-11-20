@@ -53,11 +53,14 @@ namespace Moesif.NetFramework.Example.Settings
 
         static public Dictionary<string, object> moesifOptions = new Dictionary<string, object>
         {
-            {"ApplicationId", "Your Moesif Application Id"},
+            {"ApplicationId", "eyJhcHAiOiIxOTg6MTI3IiwidmVyIjoiMi4xIiwib3JnIjoiNjQwOjEyOCIsImlhdCI6MTcyMjQ3MDQwMH0.vslnu4-2__B_bUeKSuSevG6BUw_ndKJXsMctWPy2L88"},
             {"LocalDebug", true},
             {"LogBody", true},
             {"LogBodyOutgoing", true},
-            {"ApiVersion", "1.1.0"},
+            {"RequestMaxBodySize", 100000},
+            {"ResponseMaxBodySize", 300},
+            {"IsLambda", false},
+            {"ApiVersion", "3.1.0"},
             {"IdentifyUser", IdentifyUser},
             {"IdentifyCompany", IdentifyCompany},
             {"GetSessionToken", GetSessionToken},

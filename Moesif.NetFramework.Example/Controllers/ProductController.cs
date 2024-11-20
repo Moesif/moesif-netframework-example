@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Mvc;
 
 namespace Moesif.NetFramework.Example
 {
@@ -32,12 +33,25 @@ namespace Moesif.NetFramework.Example
         // GET api/product/5
         public Product Get(int id)
         {
-            return new Product
+            if (id < 22)
             {
-                Id = 1234,
-                Name = "Chair",
-                Category = "Furniture"
-            };
+                return new Product
+                {
+                    Id = id,
+                    Name = "Small Chair",
+                    Category = "Furniture"
+                };
+            }
+            else
+            {
+                string content = GenerateLargeResponseBody(id);
+                return new Product
+                {
+                    Id = id,
+                    Name = $"Largggggggggggggge Chair [{id} KB]",
+                    Category = content
+                };
+            }
         }
 
         // POST api/product
@@ -57,5 +71,27 @@ namespace Moesif.NetFramework.Example
         public void Delete(int id)
         {
         }
+
+        private static string GenerateLargeResponseBody(int sizeInKB)
+        {
+            const string baseString = "This is a test string. ";
+            int repetitions = (sizeInKB * 1024 * 1024) / baseString.Length;
+            return new string('A', repetitions); // Create a large string filled with 'A's
+        }
+
+        //[System.Web.Http.HttpGet("download")]
+        //public IHttpActionResult Download(int sizeInMB)
+        //{
+        //    // byte[] fileBytes = File.ReadAllBytes("path/to/file");
+        //    // return File(fileBytes, "application/octet-stream", "filename.ext");
+        //    string content = GenerateLargeResponseBody(sizeInMB);
+        //    return new Product
+        //    {
+        //        Id = sizeInMB,
+        //        Name = "Chair",
+        //        Category = content
+        //    };
+        //}
+
     }
 }
