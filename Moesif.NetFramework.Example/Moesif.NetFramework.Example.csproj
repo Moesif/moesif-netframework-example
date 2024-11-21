@@ -95,12 +95,6 @@
     <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
-    <Reference Include="Moesif.Api, Version=2.0.8.0, Culture=neutral, PublicKeyToken=b3d293efeab4ba1f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moesif.Api.2.0.8\lib\net45\Moesif.Api.dll</HintPath>
-    </Reference>
-    <Reference Include="Moesif.Middleware, Version=1.4.8.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moesif.Middleware.1.4.8\lib\net461\Moesif.Middleware.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -290,6 +284,19 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\clean\moesif-dotnet\Moesif.Middleware\Moesif.Middleware.csproj">
+      <Project>{ad22eb03-540e-493d-aec1-1ae8fc8127a7}</Project>
+      <Name>Moesif.Middleware</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\clean\moesifapi-csharp\Moesif.Api\Moesif.Api.csproj">
+      <Project>{35b87982-636e-4309-badd-912972b9e433}</Project>
+      <Name>Moesif.Api</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
