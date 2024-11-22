@@ -51,24 +51,29 @@ namespace Moesif.NetFramework.Example.Settings
             return metadata;
         };
 
-        static public Dictionary<string, object> moesifOptions = new Dictionary<string, object>
+        public static Dictionary<string, object> GetMoesifOptions()
         {
-            string moesifApplicationId = Environment.GetEnvironmentVariable("MOESIF_APPLICATION_ID") ?? "<Moesif-Application-Id>";
-            {"ApplicationId", moesifApplicationId},
-            {"LocalDebug", true},
-            {"LogBody", true},
-            {"LogBodyOutgoing", true},
-            {"RequestMaxBodySize", 100000},
-            {"ResponseMaxBodySize", 300},
-            {"IsLambda", false},
-            {"ApiVersion", "3.1.0"},
-            {"IdentifyUser", IdentifyUser},
-            {"IdentifyCompany", IdentifyCompany},
-            {"GetSessionToken", GetSessionToken},
-            {"GetMetadata", GetMetadata},
-            {"GetMetadataOutgoing", GetMetadataOutgoing},
-            {"EnableBatching", true},
-            {"BatchSize", 25}
-        };
+            string moesifAppId = Environment.GetEnvironmentVariable("MOESIF_APPLICATION_ID") ?? "<Your-Moesif-Application-Id>";
+            Dictionary<string, object> moesifOptions = new Dictionary<string, object>
+            {
+                {"ApplicationId", moesifAppId },
+                {"LocalDebug", true},
+                {"LogBody", true},
+                {"LogBodyOutgoing", true},
+                {"RequestMaxBodySize", 300},
+                {"ResponseMaxBodySize", 300},
+                {"IsLambda", false},
+                {"ApiVersion", "3.1.0"},
+                {"IdentifyUser", IdentifyUser},
+                {"IdentifyCompany", IdentifyCompany},
+                {"GetSessionToken", GetSessionToken},
+                {"GetMetadata", GetMetadata},
+                {"GetMetadataOutgoing", GetMetadataOutgoing},
+                {"EnableBatching", true},
+                {"BatchSize", 25}
+            };
+
+            return moesifOptions;
+        }
     }
 }

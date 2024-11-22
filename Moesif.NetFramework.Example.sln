@@ -5,10 +5,6 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moesif.NetFramework.Example", "Moesif.NetFramework.Example\Moesif.NetFramework.Example.csproj", "{01CE4CC9-C236-4634-B462-E577A466E948}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moesif.Api", "..\clean\moesifapi-csharp\Moesif.Api\Moesif.Api.csproj", "{35B87982-636E-4309-BADD-912972B9E433}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moesif.Middleware", "..\clean\moesif-dotnet\Moesif.Middleware\Moesif.Middleware.csproj", "{AD22EB03-540E-493D-AEC1-1AE8FC8127A7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{01CE4CC9-C236-4634-B462-E577A466E948}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01CE4CC9-C236-4634-B462-E577A466E948}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01CE4CC9-C236-4634-B462-E577A466E948}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35B87982-636E-4309-BADD-912972B9E433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35B87982-636E-4309-BADD-912972B9E433}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35B87982-636E-4309-BADD-912972B9E433}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35B87982-636E-4309-BADD-912972B9E433}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD22EB03-540E-493D-AEC1-1AE8FC8127A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD22EB03-540E-493D-AEC1-1AE8FC8127A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD22EB03-540E-493D-AEC1-1AE8FC8127A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD22EB03-540E-493D-AEC1-1AE8FC8127A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
