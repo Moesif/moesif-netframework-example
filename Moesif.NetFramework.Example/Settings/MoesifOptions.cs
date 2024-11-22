@@ -58,7 +58,7 @@ namespace Moesif.NetFramework.Example.Settings
             {
                 {"ApplicationId", moesifAppId },
                 {"LocalDebug", true},
-                {"LogBody", true},
+                {"LogBody", false},
                 {"LogBodyOutgoing", true},
                 {"RequestMaxBodySize", 300},
                 {"ResponseMaxBodySize", 300},
