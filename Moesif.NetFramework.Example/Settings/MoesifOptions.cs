@@ -53,7 +53,7 @@ namespace Moesif.NetFramework.Example.Settings
 
         public static Dictionary<string, object> GetMoesifOptions()
         {
-            string moesifAppId = Environment.GetEnvironmentVariable("MOESIF_APPLICATION_ID") ?? "eyJhcHAiOiIxOTg6MTI3IiwidmVyIjoiMi4xIiwib3JnIjoiNjQwOjEyOCIsImlhdCI6MTcyMjQ3MDQwMH0.vslnu4-2__B_bUeKSuSevG6BUw_ndKJXsMctWPy2L88";
+            string moesifAppId = Environment.GetEnvironmentVariable("MOESIF_APPLICATION_ID") ?? "<Your-Moesif-Application-Id>";
             Dictionary<string, object> moesifOptions = new Dictionary<string, object>
             {
                 {"ApplicationId", moesifAppId },
