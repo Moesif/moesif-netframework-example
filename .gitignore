@@ -353,4 +353,7 @@ MigrationBackup/
 .ionide/
 .idea/
 .DS_Store/
+Content/
+ILLINK/
+Scripts/
 
